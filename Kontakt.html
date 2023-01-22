@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+		<meta name="keywords" content="kontakt"/>
+        <title>Kontakt</title>
+        <link rel="icon" href="lech.ico">
+		<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="bar">
+            <div id="logo"
+            <table border="30px" rules="none" style="width:100%;table-layout: fixed; text-align: center;">
+                <tr>
+                    <td colspan="3" style="text-align: left"><h1>GdzieDziśUstawka.pl</h1></td>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align: right; vertical-align: right"></td>
+                </tr>
+            </table>
+            </div>
+    
+                
+             </table>
+             
+        <nav>
+            <div id="nav">
+    
+            <table border="1" rules="none" style="width:100%;table-layout: fixed; text-align: center;">
+                <tr>
+                    
+                    <td> <div class="option"> <a href=index.html><h2>Strona główna</h2></a> </div> </td> 
+                    <td> <div class="option"> <a href=sklep.html><h2>Sklep kibica</h2></a> </div> </td> 
+                    <td> <div class="option"> <a href=onas.html><h2>O nas</h2></a> </div> </td>
+                    <td> <div class="option"> <a href=kontakt.html><h2>Kontakt</h2></a> </div> </td>
+                    <div style="clear:both"> </div>
+                    
+                </tr>
+            </table>
+            </div>
+        </nav>
+ <div id="formularz">
+   
+    <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+        <div class="form-row">
+            <label for="field-name">Imie</label>
+            <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+        </div>
+        <div class="form-row">
+            <label for="field-email">Email</label>
+            <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+        </div>
+        <div class="form-row">
+            <label for="field-message">Wiadomosc</label>
+            <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+        </div>
+        <div class="form-row">
+            <label class="checkbox-cnt">
+                <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                <i class="state" aria-hidden="true"></i>
+                <span>Klikajac przycisk akceptujesz regulamin strony.</span>
+            </label>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="submit-btn">
+                Wyślij
+            </button>
+        </div>
+    </form>
+ </div>
+ <div id="footer">
+
+    <footer style="text-align: center;">
+       &copy; GDU.PL &amp; Fani Lecha
+   </footer>
+     </div>
+   </div>
+</div>
+        
+   
+</body>
